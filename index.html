@@ -4,20 +4,22 @@
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" type="image/x-icon" href="./img/favicon (4).ico">
 
-  <title>Hello, world!</title>
-  <script src="https://use.fontawesome.com/63568b8d31.js"></script>
-  <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="./img/btn.css">
-  
+
+
+  <title>DSC-BTU Club</title>
+
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/btn.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> 
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
 
@@ -30,31 +32,35 @@
 
   <nav class="navbar navbar-expand-lg fixed-top bg-container1">
 
-    <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class=" menu-button"><i class="fa fa-bars "></i></span>
     </button>
-  
+
     <div class="collapse  text-center mr-md-4 ml-md-5  navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto text-center">
         <li class="nav-item  active">
-          <a  class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-           Technologies
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Technologies
           </a>
           <div class=" bg-dark dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Android Development</a>
-            <a class="dropdown-item" href="#">Machine Learning</a>
-            <a class="dropdown-item" href="#">Cloud Computing</a>
-             <a href="#artificial" class="dropdown-item">Artificial intelligence</a>
-             <a href="" class="dropdown-item"></a>
-             <a href="" class="dropdown-item"></a>
-             <a href="" class="dropdown-item"></a>
+            <a class="dropdown-item" href="#android-containers">Android Development</a>
+            <a class="dropdown-item" href="#machine-learning">Machine Learning</a>
+            <a class="dropdown-item" href="#cloud-computing" onclick="myfunction()">Cloud Computing</a>
+            <a href="#artificial" class="dropdown-item">Artificial intelligence</a>
+            <a href="#web-development" class="dropdown-item" id="web-development1"> Web Development</a>
+            <a href="#iot" class="dropdown-item" onclick="myfunction()">IOT Development</a>
+            <a href="" class="dropdown-item"></a>
+            <a href="" class="dropdown-item"></a>
+            <a href="" class="dropdown-item"></a>
           </div>
-          <li class="nav-item ml-md-4">
-            <a href="#container-image" class="nav-link">The Team</a>
-          </li>
+        <li class="nav-item ml-md-4">
+          <a href="#container-image" class="nav-link">The Team</a>
+        </li>
 
         </li>
         <li class="nav-item">
@@ -64,21 +70,22 @@
         <li class="nav-item">
           <a href="" class="nav-link">Contact Us</a>
         </li>
-        
+
         <li class="nav-item">
-            <a class="nav-link nav-event ml-md-2" href="https://dsc.community.dev/events/details/developer-student-clubs-bikaner-technical-university-presents-info-session-dsc/#/">Events</a>
+          <a class="nav-link nav-event ml-md-2"
+            href="https://dsc.community.dev/events/details/developer-student-clubs-bikaner-technical-university-presents-info-session-dsc/#/">Events</a>
         </li>
 
       </ul>
-       <span onclick="this.className='animate__hinge'" class="animate__animated animate__infinite infinite">
-      <li  id="logo" class="navbar-brand mr-0 ">
-        <a class="nav-item " class="logo"><img   src="./img/footerLogo-removebg-preview.png" alt="" >
-      <h5>Developer Studengt Club BTU</h5>
-      </a>
-      </li>
+      <span onclick="this.className='animate__hinge'" class="animate__animated animate__infinite infinite">
+        <li id="logo" class="navbar-brand mr-0 ">
+          <a class="nav-item " class="logo"><img src="./img/footerLogo-removebg-preview.png" alt="">
+            <h5>Developer Studengt Club BTU</h5>
+          </a>
+        </li>
       </span>
-      </div>
-     
+    </div>
+
     </div>
   </nav>
 
@@ -89,12 +96,12 @@
 
 
   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-    <a class="dropdown-item" href="#">Android</a>
-    <a class="dropdown-item" href="#">machinelearning</a>
-    <a class="dropdown-item" href="#">Artificial intelligence</a>
-    <a class="dropdown-item"  href="#">Web development</a>
-     <a class="dropdown-item"  href="#">Cloud computing</a>
-     </div>
+    <a class="dropdown-item" href="#android-containers">Android</a>
+    <a class="dropdown-item" href="#machine-learning">machinelearning</a>
+    <a class="dropdown-item" href="#Artificial">Artificial intelligence</a>
+    <a class="dropdown-item" href="#web-development">Web development</a>
+    <a class="dropdown-item" href="#">Cloud computing</a>
+  </div>
 
 
 
@@ -102,10 +109,11 @@
 
 
 
-  <div class="container-fluid pt-5  animate__animated animate__bounce first-container h-100 container1">
+  <div class="container-fluid py-5  animate__animated animate__bounce first-container container1">
 
     <div class="row">
-      <div class="col-12 text-center"> <!--
+      <div class="col-12 text-center justify-content-center align-items-center">
+        <!--
           <h1 class="btu-slide" id="btu-slide1">WELCOME IN DSC BTU</h1> -->
 
 
@@ -113,138 +121,53 @@
 
 
         <div class="col-12 btu-slide2 text-center">
-          <p style="color:black;">powered by
+          <p style="color:black;">Formerly Known as
             <span style="color:#557DBF ;">G</span>
             <span class="google" style="color:#E1382B ;">O</span>
             <span class="google" style="color:#FBBC12 ;">O</span>
             <span class="google" style="color: #557DBF;">G</span>
             <span class="google" style="color: #189E59;">L</span>
             <span class="google" style="color:#E1382B ;">E</span>
+            Student ambassador program
           </p>
         </div>
       </div>
     </div>
+
+
+    <div class="col-auto mt-5 mt-md-3 text-center">
+      <img src="./img/download.png" alt="">
     </div>
 
+  </div>
+  </div>
 
 
-    <div class="container-fluid container1 #min-container  px-5">
-      <div class="container">
-        <div class="row content-container align-items-center ">
-          <div class="col-md  order-last order-md-first" data-aos="slide-right">
-            <div class="text-content box p-3">
-              <h2>DEVELOPER STUDENT CLUB</h2>
-              <p> Developer Student Clubs are university based community groups for students interested in
-                <span style="color:#557DBF ;">G</span>
-                <span class="google" style="color:#E1382B ;">O</span>
-                <span class="google" style="color:#FBBC12 ;">O</span>
-                <span class="google" style="color: #557DBF;">G</span>
-                <span class="google" style="color: #189E59;">L</span>
-                <span class="google" style="color:#E1382B ;">E</span>
-                technologies. Students from all undergraduate or graduate programs with an interest in growing as a
-                developer are welcome."</p>
-            </div>
-            <a href="https://dsc.community.dev/" class="btn btn-primary btn-animated mt-3"> MORE ABOUT DSC</a>
 
-
+  <div class="container-fluid container1 #min-container my-5">
+    <div class="container">
+      <div class="row content-container align-items-center ">
+        <div class="col-md-6" data-aos="slide-right">
+          <div class="text-content box p-3">
+            <h2>DEVELOPER STUDENT CLUB</h2>
+            <p> Developer Student Clubs are university based community groups for students interested in <br>
+              <span style="color:#557DBF ;">G</span>
+              <span class="google" style="color:#E1382B ;">O</span>
+              <span class="google" style="color:#FBBC12 ;">O</span>
+              <span class="google" style="color: #557DBF;">G</span>
+              <span class="google" style="color: #189E59;">L</span>
+              <span class="google" style="color:#E1382B ;">E</span>
+              technologies. Students from all undergraduate or graduate programs with an interest in growing as a
+              developer are welcome."</p>
           </div>
-          <div class="col-md  order-first order-md-last" data-aos="slide-left">
-            <div class="bg-img mb-md-4">
-              <img class="img-content" src="./img/web animation dsc_2.gif" alt="google-dsc">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+          <a href="https://dsc.community.dev/" class="btn btn-primary btn-animated mt-3"> MORE ABOUT DSC</a>
 
-
-
-    <div class="container-fluid my-5 py-2 " data-aos="slide-up">
-      <div class="container">
-        <div class="row ">
-          <div class="col">
-            <div class="text-center our-focus">
-              <h2 class="mb-0 ">Our Foucs</h2>
-              <P>Way to proof yourself</P>
-              
-              <i class="fa fa-angle-double-down fa-4x"> </i>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="container-fluid container2 p-5">
-      <div class="container ">
-        <div class="row  align-items-center justify-content-center">
-          <div class="col-md-6 box py-3 px-3" data-aos="slide-right">
-            <div class="head-container">
-              <h2>Android Development</h2>
-              <i class="fa fa-android" aria-hidden="true"></i>
-              <p  >Android is an open source and Linux-based Operating System for mobile devices such as smartphones and
-                tablet computers. Android was developed by the
-                <span style="color:#557DBF ;">G</span>
-                <span class="google" style="color:#E1382B ;">O</span>
-                <span class="google" style="color:#FBBC12 ;">O</span>
-                <span class="google" style="color: #557DBF;">G</span>
-                <span class="google" style="color: #189E59;">L</span>
-                <span class="google" style="color:#E1382B ;">E</span> .</p>
-            </div>
-
-
-          </div>
-          <div class="col-md-6" data-aos="slide-left">
-            <div class="android-img  text-center">
-              <img src="./img/a1.png" alt="" class="android">
-            </div>
-          </div>
 
         </div>
-      </div>
-    </div>
-
-
-    <div class="container-fluid p-5 container3" id= "artificial" >
-      <div class="container">
-        <div class="row justify-content-center align-items-center">
-          <div class="col-md-6" data-aos="slide-right">
-            <div class="android-img">
-              <img
-                src="./img/1398418.png"
-                alt="">
-            </div>
+        <div class="col-md-6 mb-4 mt-4 mt-md-0 mb-md-0" data-aos="slide-left">
+          <div class="bg-img mb-md-4">
+            <img class="img-content" src="./img/web animation dsc_2.gif" alt="google-dsc">
           </div>
-          <div class="col-md-6 box p-3" data-aos="slide-left">
-            <div class="intelligence">
-              <h2>Artificilial Intelligence</h2>
-              <p>Artificial intelligence is based on the principle that human intelligence can be defined in a way that
-                a
-                machine can easily mimic it and execute tasks, from the most simple to those that are even more complex.
-                The goals of artificial intelligence include learning, reasoning, and perception.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="container-fluid container4 p-5">
-      <div class="container">
-        <div class="row justify-content-center align-items-center">
-          <div class="col-md-6 box p-3" data-aos="slide-right">
-            <div class="machinelearning">
-              <h2>Machine Learning</h2>
-              <p>Machine learning is an application of artificial intelligence (AI) that provides systems the ability to
-                automatically learn and improve from experience without being explicitly programmed.</p>
-            </div>
-          </div>
-          <div class="col-md-6" data-aos="slide-left">
-            <div class="android-img">
-              <img src="./img/ml11.jpg" alt="">
-            </div>
-          </div>
-
         </div>
       </div>
     </div>
@@ -252,9 +175,100 @@
 
 
 
+  <div class="container-fluid my-5 py-2 " data-aos="slide-up">
+    <div class="container">
+      <div class="row ">
+        <div class="col">
+          <div class="text-center our-focus">
+            <h2 class="mb-0 ">Our Foucs</h2>
+            <P>Way to proof yourself</P>
+
+            <i class="fa fa-angle-double-down fa-4x"> </i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
-  <div class="container-fluid container6 p-5">
+  <div class="container-fluid container2 py-5" id="android-containers">
+    <div class="container ">
+      <div class="row  align-items-center justify-content-center">
+        <div class="col-md-6 box py-3 " data-aos="slide-right">
+          <div class="head-container">
+            <h2>Android Development</h2>
+            <i class="fa fa-android" aria-hidden="true"></i>
+            <p>Android is an open source and Linux-based Operating System for mobile devices such as smartphones and
+              tablet computers. Android was developed by the
+              <span style="color:#557DBF ;">G</span>
+              <span class="google" style="color:#E1382B ;">O</span>
+              <span class="google" style="color:#FBBC12 ;">O</span>
+              <span class="google" style="color: #557DBF;">G</span>
+              <span class="google" style="color: #189E59;">L</span>
+              <span class="google" style="color:#E1382B ;">E</span> .</p>
+          </div>
+
+
+        </div>
+        <div class="col-md-6" data-aos="slide-left">
+          <div class="android-img  text-center">
+            <img src="./img/a1.png" alt="" class="android">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid py-5 container3" id="artificial">
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-6" data-aos="slide-right">
+          <div class="android-img">
+            <img src="./img/1398418.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-6 box p-3" data-aos="slide-left">
+          <div class="intelligence">
+            <h2>Artificilial Intelligence</h2>
+            <p>Artificial intelligence is based on the principle that human intelligence can be defined in a way that
+              a
+              machine can easily mimic it and execute tasks, from the most simple to those that are even more complex.
+              The goals of artificial intelligence include learning, reasoning, and perception.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid container4 py-5" id="machine-learning">
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-6 box p-3" data-aos="slide-right">
+          <div class="machinelearning">
+            <h2>Machine Learning</h2>
+            <p>Machine learning is an application of artificial intelligence (AI) that provides systems the ability to
+              automatically learn and improve from experience without being explicitly programmed.</p>
+          </div>
+        </div>
+        <div class="col-md-6" data-aos="slide-left">
+          <div class="android-img">
+            <img src="./img/ml11.jpg" alt="">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+
+
+  <div class="container-fluid container6 p-5" id="web-development">
     <div class="container">
       <div class="row justify-content-center align-items-center">
         <div class="col-md-6 box order-last p-3" data-aos="slide-left">
@@ -281,17 +295,17 @@
 
   <div class="button text-center mt-5 mb-5" id="show-more" data-aos="slide-up">
     <a onclick="myfunction()" class="btn btn-primary btn-animated">
-     <span> Show More </span>
-    <span>
-      <i class="fa fa-caret-down"></i>
-    </span></a>
-     
+      <span> Show More </span>
+      <span>
+        <i class="fa fa-caret-down"></i>
+      </span></a>
+
   </div>
 
 
   <div class="collapse" id="button-none">
 
-    <div class="container-fluid container5 pt-5 pb-5 ">
+    <div class="container-fluid container5 pt-5 pb-5" id="cloud-computing">
       <div class="container">
         <div class=" row justify-content-center align-items-center">
           <div class="col-md-6" data-aos="slide-left">
@@ -312,8 +326,34 @@
     </div>
 
 
+    <div class="container-fluid container4 p-5" id="iot">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-6 box p-3" data-aos="slide-right">
+            <div class="machinelearning">
+              <h2>Internet of Things (IOT)</h2>
+              <p>The Internet of things describes the network of physical objects—“things”—that are embedded with
+                sensors, software, and other technologies for the purpose of connecting and exchanging data with other
+                devices and systems over the Internet.</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-aos="slide-left">
+            <div class="android-img">
+              <img src="./img/ml11.jpg" alt="">
+            </div>
+          </div>
 
-    <div class="button text-center my-5 " id="show-less">
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="button text-center my-5 d-none" id="show-less">
       <button onclick="myfunctionn()" class="btn btn-animated btn-outline-primary">
         Show less</button>
     </div>
@@ -334,271 +374,180 @@
     </div>
   </div>
 
-  <div class="container-fluid container-image p-3" id="container-image">
-    <div class="container">
-      <div class="row align-items-center justify-content-center">
-        <div class="col-md-3 text-center ">
-          <img class="rounded-circle" src="./img/tomarhites.jpg" alt="dsclead">
-        </div>
-        <div class=" col-md-3 text-center">
-          <h2 class="mb-0">Hitesh Tomar</h2>
-          <p>Dsc Leads</p>
-          <p></p>
-        </div>
+  <div class="container-fluid container-image pt-5 mt-4" id="container-image">
 
+    <div class="row align-items-center justify-content-center">
+      <div class="col-auto text-center ">
+        <img class="rounded-circle" src="./img/tomarhites.jpg" alt="dsclead">
+      </div>
+      <div class=" col-auto text-center">
+        <h2 class="mt-4 mt-md-0">Hitesh Tomar</h2>
+        <p>Dsc Leads</p>
+        <p></p>
+      </div>
+    </div>
+
+
+    <div class="row justify-content-md-around justify-content-center mt-5 ">
+      <div class=" col-md-auto">
+        <div class="image-content">
+          <img src="./img/sanwarkumar.jpg" alt="">
+
+          <h5>Sanwar Kumar</h5>
+          <p>Front/Back Dev</p>
+        </div>
+      </div>
+      <div class="col-md-auto">
+        <div class="image-content mt-4 mt-md-0">
+          <img src="./img/deepak.jpg" alt="">
+          <h5>Deepak kumar Yogi</h5>
+          <p>Android Development</p>
+        </div>
+      </div>
+      <div class="col-md-auto">
+        <div class="image-content mt-4 mt-md-0">
+          <img src="./img/roopeshshrm.jpg" alt="">
+          <h5>Roopansh Sharma</h5>
+          <p>Technical Head</p>
+        </div>
+      </div>
+      <div class="col-md-auto">
+        <div class="image-content mt-4 mt-md-0">
+          <img src="./img/sushant-1.jpg" alt="">
+          <h5>Sushant Raj</h5>
+          <p>IOT Developer</p>
+        </div>
+      </div>
+      <div class="col-md-auto">
+        <div class="image-content mt-4 mt-md-0">
+          <img src="./img/WhatsApp Image 2020-10-05 at 15.43.20.jpeg" alt="">
+          <h5>Gaurav Soni</h5>
+          <p>Machine Learning</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row mt-0 mt-md-5 justify-content-center justify-content-md-around">
+      <div class="col-auto">
+        <div class="image-content mt-md-0 mt-4">
+          <img src="./img/myself.jpg" alt="">
+          <h5>Bhupesh Singh Rathore</h5>
+          <p>UI/UX and Video Editor</p>
+        </div>
+      </div>
+      <div class="col-auto">
+        <div class="image-content mt-4 mt-md-0">
+          <img src="./img/ayushtiwari.jpg" alt="">
+          <h5>Ayush Tiwari</h5>
+          <p> Iot Developer</p>
+        </div>
+      </div>
+      <div class="col-auto">
+        <div class="image-content mt-4 mt-md-0">
+          <img src="./img/bhavesh.JPG" alt="">
+          <h5>Bhavesh Chouhan</h5>
+          <p>Backend Dev</p>
+        </div>
+      </div>
+      <div class="col-auto ">
+        <div class="image-content mt-4 mt-md-0">
+          <img src="./img/aniket.jpg" alt="">
+          <h5>Aniket Kumar</h5>
+          <p>management</p>
+        </div>
       </div>
 
+      <div class="col-md-auto">
+        <div class="image-content mt-4 mt-md-0">
+          <img src="./img/IMG_20200927_115744.jpg" alt="">
+          <h5>Rohan Sinha</h5>
+          <p>IOT Developer</p>
+        </div>
+      </div>
     </div>
 
 
 
 
-    <div class=" py-4 row row11">
+
+
+
+
+
+    <div class="container-fluid container9  pb-0 pt-4 pr-4 mt-4 " id="footer-container">
+      <div class="row ">
+        <div class="col-md-3 align-self-center">
+          <div class="logo-footer">
+            <img src="./img/DSC Bikaner Technical University Light Vertical-Logo.png" alt="">
+          </div>
+        </div>
+
+        <div class=" col-md-3 Social-media text-center text-md-start pt-4 pt-md-0">
+          <h4>Join Us</h4>
+          <ul class="li1">
+            <li><a href="https://www.instagram.com/p/CF_RPUpJkPn/?igshid=1afgadtnieopw"><i
+                  class="fa fa-instagram fa-lg social-color" aria-hidden="true"></i></a></li>
+            <li><a href="https://github.com/sanwarkode11"><i class="fa fa-github fa-lg social-color"
+                  aria-hidden="true"></i></a></li>
+            <li><a href="https://www.linkedin.com/mwlite/company/dsc-ecb-btu"><i
+                  class="fa fa-linkedin fa-lg social-color" aria-hidden="true"></i></a></li>
+            <li><a href=" https://twitter.com/dsc_ecb?s=09"><i class="fa fa-twitter fa-lg social-color"
+                  aria-hidden="true"></i></a></li>
+            <li><a href=""><i class="fa fa-youtube fa-lg social-color" aria-hidden="true"></i></a></li>
+            <li><a href="mailto:sanwarkumarlal1111@gmail.com"><i class="fa fa-envelope fa-lg social-color"
+                  aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-2 pt-4 pt-md-0 text-center links text-md-start">
+          <h4>Important links</h4>
+          <ul>
+            <li class="links"> <a href="https://dsc.community.dev/bikaner-technical-university/">DSC BTU </a></li>
+            <li class="links"><a href="https://dsc.community.dev/">DSC Google</a></li>
+            <li class="links"><a href="">Your Feedback</a></li>
+
+            <li><a href=""></a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-4 pt-4 pt-md-0">
+          <div class="contact-us text-center text-md-start">
+            <h4>Contact us</h4>
+            <h6>Bikaner Technical University</h6>
+            <p class="text-center">Rajasthan, Bikaner</p>
+            <p class="text-center"> Address: Karni Nagar 334004</p>
+
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="row pt-1 mb-4 pt-md-0">
+        <div class="col text-center text-md-start">
+          <span class="sanwar-lal">Made by <i class="fa fa-heart"></i> Sanwar Kumar</span>
+          <div class="col">
+            <a href="https://www.linkedin.com/in/sanwark/"><i class="fa fa-linkedin fa-lg social-color mr-2"
+                aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-instagram fa-lg social-color mr-2" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-twitter fa-lg social-color mr-2" aria-hidden="true"></i></a>
+            <a href="https://github.com/sanwarkode11"><i class="fa fa-github fa-lg social-color mr-2"
+                aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="copyright">
       <div class="col">
-        <div class="owl-carousel owl-theme">
-          <div class="item" data-aos="zoom-in">
-            <div class="row ">
-              <div class="col-6">
-                <img id="img1" src="./img/tomarhites.jpg" alt="">
-              </div>
-              <div class="item-content align-self-center text-center col ">
-                <h5>Sanwar Kumar</h5>
-                <p class="mr-0">Front/back end dev</p>
-              </div>
-            </div>
-          </div>
+        <p><i class="fa fa-copyright " aria-hidden="true"> </i> Copyright 2020 | Reserved All Right </p>
 
-
-
-          <div class="item" data-aos="zoom-in">
-            <div class="row">
-              <div class="col-6">
-                <img id="img1" src="./img/tomarhites.jpg" alt="">
-              </div>
-              <div class="item-content align-self-center col">
-                <h5>Deepak Kumar</h5>
-                <p>Android DEv</p>
-              </div>
-            </div>
-          </div>
-
-          
-          <div class="item">
-            <div class="row">
-              <div class="col-6">
-                <img id="img1" src="./img/tomarhites.jpg" alt="">
-              </div>
-              <div class="item-content align-self-center col ">
-                <h5>Gavrav Soni</h5>
-                <p>Machine Learning</p>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="item" data-aos="zoom-in">
-            <div class="row">
-              <div class="col-6">
-                <img id="img1" src="./img/tomarhites.jpg" alt="">
-              </div>
-              <div class="item-content align-self-center  col">
-                <h5>Sunil Poonia</h5>
-                <p>ANdroid Dev</p>
-              </div>
-            </div>
-          </div>
-
-
-          
-
-          
-          <div class="item" data-aos="zoom-in">
-            <div class="row">
-              <div class="col-6">
-                <img id="img1" src="./img/tomarhites.jpg" alt="">
-              </div>
-              <div class="item-content align-self-center col">
-                <h5 class="text-center">Roopansh Sharma</h5>
-                <p class="mr-0">Technical Head/Ml</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="item" data-aos="zoom-in">
-            <div class="row">
-              <div class="col-6">
-                <img id="img1" src="./img/tomarhites.jpg" alt="">
-              </div>
-              <div class="item-content align-self-center text-center  col">
-                <h5>Bhupesh singh Rathore</h5>
-                <p>UI/UX Designer</p>
-              </div>
-            </div>
-          </div>
-
-
-
-          
-          <div class="item" data-aos="zoom-in">
-            <div class="row">
-              <div class="col-6">
-                <img id="img1" src="./img/tomarhites.jpg" alt="">
-              </div>
-              <div class="item-content align-self-center  col">
-                <h5>Aysuh Tiwari</h5>
-                <p>IOT Team</p>
-              </div>
-            </div>
-          </div>
-
-
-
-          
-          <div class="item">
-            <div class="row">
-              <div class="col-6">
-                <img id="img1" src="./img/tomarhites.jpg" alt="">
-              </div>
-              <div class="item-content align-self-center bhav col">
-                <h5 class="text-center">Bhavesh Chouhan</h5>
-                <p>Backend Developer</p>
-              </div>
-            </div>
-          </div>
-
-
-
-          
-          <div class="item">
-            <div class="row">
-              <div class="col-6">
-                <img id="img1" src="./img/tomarhites.jpg" alt="">
-              </div>
-              <div class="item-content align-self-center  col">
-                <h5>Aniket Kumar</h5>
-                <p>Management</p>
-              </div>
-            </div>
-          </div>
-
-
-
-          
-          <div class="item">
-            <div class="row">
-              <div class="col-6">
-                <img id="img1" src="./img/tomarhites.jpg" alt="">
-              </div>
-              <div class="item-content align-self-center  col">
-                <h5>xyz</h5>
-                <p>post name</p>
-              </div>
-            </div>
-          </div>
-
-
-
-          
-          <div class="item">
-            <div class="row">
-              <div class="col-6">
-                <img id="img1" src="./img/tomarhites.jpg" alt="">
-              </div>
-              <div class="item-content align-self-center  col">
-                <h5>xyz</h5>
-                <p>post name</p>
-              </div>
-            </div>
-          </div>
-
-          
-          <div class="item">
-            <div class="row">
-              <div class="col-6">
-                <img id="img1" src="./img/tomarhites.jpg" alt="">
-              </div>
-              <div class="item-content align-self-center  col">
-                <h5>xyz</h5>
-                <p>post name</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
       </div>
-    </div>
-  </div>
-
-
-
-
-
-  <div class="container-fluid container9  pb-0 pt-4 pr-4 mt-4" id="footer-container">
-    <div class="row ">
-      <div class="col-md-3 align-self-center">
-        <div class="logo-footer">
-          <img src="./img/DSC Bikaner Technical University Light Vertical-Logo.png" alt="">
-        </div>
-      </div>
-
-      <div class=" col-md-3 Social-media text-center text-md-start pt-4 pt-md-0">
-        <h4>Join Us</h4>
-        <ul class="li1">
-          <li><a href=""> <i class="fa fa-facebook fa-lg social-color" aria-hidden="true"></i></a></li>
-          <li><a href=""><i class="fa fa-instagram fa-lg social-color" aria-hidden="true"></i></a></li>
-          <li><a href=""><i class="fa fa-github fa-lg social-color" aria-hidden="true"></i></a></li>
-          <li><a href=""><i class="fa fa-linkedin fa-lg social-color" aria-hidden="true"></i></a></li>
-          <li><a href=""><i class="fa fa-twitter fa-lg social-color" aria-hidden="true"></i></a></li>
-          <li><a href=""><i class="fa fa-youtube fa-lg social-color" aria-hidden="true"></i></a></li>
-          <li><a href=""><i class="fa fa-envelope fa-lg social-color" aria-hidden="true"></i></a></li>
-        </ul>
-      </div>
-
-      <div class="col-md-2 pt-4 pt-md-0 text-center links text-md-start">
-        <h4>Important links</h4>
-        <ul>
-          <li class="links"> <a href="https://dsc.community.dev/bikaner-technical-university/">DSC BTU </a></li>
-          <li class="links"><a href="https://dsc.community.dev/">DSC Google</a></li>
-          <li class="links"><a href="">Your Feedback</a></li>
-
-          <li><a href=""></a></li>
-        </ul>
-      </div>
-
-      <div class="col-md-4 pt-4 pt-md-0">
-        <div class="contact-us text-center text-md-start">
-          <h4>Contact us</h4>
-          <h6>Bikaner Technical University</h6>
-          <p class="text-center">Rajasthan, Bikaner</p>
-          <p class="text-center"> Address: Karni Nagar 334004</p>
-          
-
-
-        </div>
-      </div>
-    </div>
-
-    <div class="row pt-1 pt-md-0">
-      <div class="col text-center text-md-start">
-        <span>Made by <i class="fa fa-heart"></i> Sanwar Kumar</span>
-        <div class="col">
-        <a href="https://www.linkedin.com/in/sanwark/"><i class="fa fa-linkedin fa-lg social-color mr-2" aria-hidden="true"></i></a>
-        <a href=""><i class="fa fa-instagram fa-lg social-color mr-2" aria-hidden="true"></i></a>
-        <a href=""><i class="fa fa-twitter fa-lg social-color mr-2" aria-hidden="true"></i></a>
-        <a href=""><i class="fa fa-github fa-lg social-color mr-2" aria-hidden="true"></i></a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
-  <div class="copyright">
-    <div class="col">
-      <p><i class="fa fa-copyright " aria-hidden="true"> </i> Copyright | Reserved All Right </p>
 
     </div>
-
   </div>
   </div>
 
@@ -613,8 +562,8 @@
   <script>
     AOS.init({
       offset: 200,
-      duration:500,
-      
+      duration: 500,
+
     });
   </script>
 
@@ -653,12 +602,14 @@
   </script>
 
 
-  <script src="./Juery.js"></script>
-  <script src="./owl.carousel.min.js"></script>
-  <script src="./owl.jquery.js"></script>
+
+
+
+
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://use.fontawesome.com/63568b8d31.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
@@ -668,8 +619,10 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
-<link rel="stylesheet" href="./owl.carousel.min.css">
-  <link rel="stylesheet" href="./owl.theme.default.min.css">
+
+
+
+
 </body>
 
 </html>
